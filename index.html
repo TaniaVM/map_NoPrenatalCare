@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Late/No Prenatal Care NY</title>
+  <meta name="description" content="HealthNY">
+  <meta name="Tania Vara" content="SitePoint">
+  <meta name="vie wport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height" />
+
+  <!-- Fonts from googleapis -->
+  <link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Dosis:300,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
+
+<!-- Stylesheet from bootstrap and leaflet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/css/bootstrap-slider.min.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/journal/bootstrap.min.css" rel="stylesheet" integrity="sha384-r/qnS4YZBLuBSKeVc+sM4eUYUiJMFhkHfx1nwlErHhTd+NgeJlN/NiiTd6jbKJzm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="data/apprise-v2.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   
+</head>
+
+<body>
+    <!-- Creates a header with a link and inserts an icon-->
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://www.nyc.gov/html/nypd/html/analysis_and_planning/historical_nyc_crime_data.shtml"><span class="glyphicon glyphicon-stats"  aria-hidden="true"></span><b> &nbsp;Late/No Prenatal Care New York, 2014 </b></a>
+    </div>
+
+          <div class="nav navbar-nav navbar-right">
+    <!--   <button type="button" class="btn btn-default navbar-btn"><div  class="myButton" id="one">Manhattan</div></button> -->
+  
+<!--         
+ 
+
+        <li><a href="http://localhost:8000/crime_map/map_location/index2.html"> otrolink</a></li>
+        -->
+
+
+        <li><a href="https://www.health.ny.gov/statistics/vital_statistics/">DATA</a></li>
+
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    
+  </nav>
+
+  <div class="row" style="border-t op: 2px solid black;">
+        <div class="col-xs-12 col-sm-8 col-md-9">        
+      <div id="map1" class="map"></div>
+    </div>
+
+   <div class="col-sm-2 col-md-3">
+    <br>
+   <h1>Vital Statistics Live Births Percent Late/No Prenatal Care by Mother's Race/Ethnicity and Resident County, 2014</h1>
+  <div id="chartContainer">
+    <div>This map shows the percentage of New York State live births with late or no prenatal care by the mother’s race/ethnicity and county of residence. The data presented here may not by the same as the Vital Statistics table on the DOH public web due to data updates. For more information, go to <a href = "https://www.health.ny.gov/statistics/vital_statistics/">DOH</a> </div>
+   
+
+
+  </div>
+  <!-- Creates a Dropdown list for selecting Data -->
+    <div class="dropdown">
+        <h2>Race/Ethnicity</h2>
+        <select class="form-control" id="dropDown" style="width:230px" onchange="changeType()">
+          <option value="Average">Average</option>
+          <option value="Black_Only">Black Only</option>
+          <option value="Hispanic">Hispanic </option>
+          <option value="Other">Other </option>
+          <option value="White_Only">White Only </option>
+          
+        </select>
+
+        <ul><a href="http://github.com/TaniaVM/crime_map"><i class="fa fa-github " ></i> GITHUB</a></ul>
+
+        <ul><a href="mailto:tvm237@nyu.edu" id="alink"><i class="fa fa-envelope"></i> SUGGESTIONS</a></ul>
+
+
+
+      </div>
+      </div>  
+      </div>
+      </div>
+    </div>
+    <h4>Source:  NYPD CompStat Data. City Wide Crime Statistics</h4>
+  <!-- Initial info window when openning the web page --> 
+<div id="infoWindow"><br>
+              County: New York 
+              <h3>6.9</h3>
+              <br>
+              Percentage by County
+              
+            </div>
+  <!--Scripts sources needed --> 
+  <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/bootstrap-slider.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="data/apprise-v2.js"></script>
+
+
+
+
+
+</body>
+</html>
